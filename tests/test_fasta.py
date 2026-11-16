@@ -1,7 +1,6 @@
 ﻿import pytest
 
-from src.genewave.fasta import parse_fasta, validate_dna_sequence
-
+from genewave.fasta import parse_fasta, validate_dna_sequence
 
 def test_valid_dna_sequence():
     assert validate_dna_sequence("ATGC") is True
